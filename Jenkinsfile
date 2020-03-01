@@ -34,6 +34,7 @@ pipeline
 				sh """
 					git config --global user.name "learn-cloud"
     					git config --global user.email githubanand@gmail.com
+					git remote add origin https://learn-cloud:Srinu%40571@github.com/learn-cloud/static-website-example.git
 					ls -ltr
 					git checkout -b anand_test
 					echo "new line" >> index.html
