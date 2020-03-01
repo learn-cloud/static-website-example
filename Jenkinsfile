@@ -3,6 +3,7 @@ def dockerImageRepo = 'gatewaytech/gatewaytech-ui'
 def dockerImageTag
 def dockerImage
 def dockerRegistry = 'hub.docker.com'
+def branchToUse = env.BRANCH
 
 pipeline
 {
@@ -23,7 +24,7 @@ pipeline
 		{
 			steps
 			{
-				checkoutConfiguration(branch: master, secure: false, target: '.')
+				checkoutConfiguration(branch: branchToUse, secure: false, target: '.')
 			}
 		}
 	}
