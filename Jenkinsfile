@@ -33,6 +33,14 @@ pipeline
 			{
 				sh """
 					ls -ltr
+					git checkout -b anand_test
+					echo "new line" >> index.html
+					git status
+					git add index.html
+					git status
+					git commit -m "test anand"
+					git push --set-upstream origin anand_test
+					
 				"""
 				
 			}
