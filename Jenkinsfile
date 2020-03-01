@@ -27,5 +27,15 @@ pipeline
 				checkout scm
 			}
 		}
+		stage('did the changes')
+		{
+			steps
+			{
+				sh """
+					ls -ltr
+				"""
+				
+			}
+		}
 	}
 }
