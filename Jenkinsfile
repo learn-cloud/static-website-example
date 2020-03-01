@@ -27,7 +27,7 @@ pipeline
 			{
 				// checkout scm
 				sh """
-					git pull
+					ls -ltr
 				"""
 			}
 		}
