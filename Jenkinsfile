@@ -14,7 +14,8 @@ pipeline
 		{
 			steps
 			{
-				deleteDir()
+				// deleteDir()
+
 				echo "the build number is ${currentBuild.number}"
 				echo 'Cleanup Done'
 			}
@@ -24,7 +25,10 @@ pipeline
 		{
 			steps
 			{
-				checkout scm
+				// checkout scm
+				sh """
+					git pull
+				"""
 			}
 		}
 		stage('did the changes')
