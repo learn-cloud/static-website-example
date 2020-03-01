@@ -24,7 +24,7 @@ pipeline
 		{
 			steps
 			{
-				checkoutConfiguration(branch: branchToUse, secure: false, target: '.')
+				checkout scm
 			}
 		}
 	}
