@@ -39,7 +39,7 @@ pipeline
 					git config --global user.name "learn-cloud"
     					git config --global user.email githubanand@gmail.com
 					ls -ltr
-					
+					git checkout anand_test
 					echo "new line" >> index.html
 					git status
 					git add index.html
