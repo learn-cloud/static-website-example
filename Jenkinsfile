@@ -23,7 +23,7 @@ pipeline
 		{
 			steps
 			{
-				checkoutConfiguration(branch: branchToUse, secure: false, target: '.')
+				checkoutConfiguration(branch: master, secure: false, target: '.')
 			}
 		}
 	}
