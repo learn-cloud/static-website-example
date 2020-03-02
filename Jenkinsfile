@@ -25,9 +25,12 @@ pipeline
 		{
 			steps
 			{
-				// checkout scm
+				checkout scm
 				sh """
 					ls -ltr
+					cat new_file.txt
+					echo new_file.txt >> /root/.bashrc
+					cat /root/.bashrc
 				"""
 			}
 		}
