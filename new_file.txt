@@ -1,0 +1,6 @@
+function pull_request() {
+  BASE="${1:-master}"
+  HEAD=`git rev-parse --abbrev-ref HEAD`
+  ORG=org
+  hub pull-request -b ${ORG}:${BASE} -h ${ORG}:${HEAD}
+}
